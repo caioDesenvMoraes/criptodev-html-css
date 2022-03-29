@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -19,7 +23,60 @@ h1, h2, h3, h4, h5, h6, p, span, strong {
     text-align: center;
 }
 
+.navigation {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    background-color: #000;
+    border-radius: 0 12px 12px 0;
+}
+
+.nav-content {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+}
+
 .section-element {
     height: 100vh;
-    width: 100vw;
+    width: 100%;
+}
+
+.content-paralex {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vader-bg {
+    background-image: url("../img/vader-bg.jpg");
+    color: #fff;
+}
+
+.flash-bg {
+    background-image: url("../img/flash-bg.jpg");
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
